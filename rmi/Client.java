@@ -1,5 +1,6 @@
 import java.rmi.registry.LocateRegistry; 
-import java.rmi.registry.Registry;  
+import java.rmi.registry.Registry;
+import java.util.Scanner;
 
 public class Client {  
    private Client() {}  
@@ -12,7 +13,13 @@ public class Client {
          Operation stub = (Operation) registry.lookup("Operation"); 
     
          // Calling the remote method using the obtained object 
-         int n1 = 1, n2 = 2;
+         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+	     System.out.println("Enter n1:");
+	     int n1 = Integer.valueOf(myObj.nextLine());  // Read user input
+
+	     System.out.println("Enter n2:");
+	     int n2 = Integer.valueOf(myObj.nextLine());  // Read user input
+	  
          float result = 0;
          String op = "+";
          switch(op){

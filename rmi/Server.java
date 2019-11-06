@@ -6,7 +6,7 @@ import java.rmi.server.UnicastRemoteObject;
 public class Server extends OperationImpl { 
    public Server() {} 
    public static void main(String args[]) { 
-      try { 
+      try {
          // Instantiating the implementation class 
          OperationImpl obj = new OperationImpl(); 
     

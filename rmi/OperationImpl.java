@@ -10,7 +10,7 @@ public class OperationImpl implements Operation {
   public float sub(int a, int b) {  
     return a - b;
   }
-  
+
   @Override
   public float mult(int a, int b) {  
     return a * b;
@@ -19,5 +19,5 @@ public class OperationImpl implements Operation {
   @Override
   public float div(int a, int b) {  
     return a / b;
-  }  
+  }
 } 
