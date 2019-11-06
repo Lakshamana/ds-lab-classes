@@ -1,23 +1,23 @@
 public class OperationImpl implements Operation {  
    
- // Implementing the interface method 
+ // Implementing the floaterface method 
   @Override
-  public float add(int a, int b) {  
+  public float add(float a, float b) {  
     return a + b;
   }
   
   @Override
-  public float sub(int a, int b) {  
+  public float sub(float a, float b) {  
     return a - b;
   }
 
   @Override
-  public float mult(int a, int b) {  
+  public float mult(float a, float b) {  
     return a * b;
   }
 
   @Override
-  public float div(int a, int b) {  
-    return a / b;
+  public float div(float a, float b) {  
+    return (float) a / b;
   }
 } 
