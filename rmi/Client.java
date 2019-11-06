@@ -13,7 +13,22 @@ public class Client {
     
          // Calling the remote method using the obtained object 
          int n1 = 1, n2 = 2;
-         int result = stub.add(n1, n2); 
+         float result = 0;
+         String op = "+";
+         switch(op){
+         	case "+":
+         		result = stub.add(n1, n2);
+         	break;
+         	case "-":
+         		result = stub.sub(n1, n2);
+         	break;
+         	case "*":
+         		result = stub.mult(n1, n2);
+         	break;
+         	case "/":
+         		result = stub.div(n1, n2);
+         	break;
+         }
          System.out.println("Result: " + result);
          
          // System.out.println("Remote method invoked"); 
